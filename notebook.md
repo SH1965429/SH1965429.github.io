@@ -54,7 +54,7 @@
 | Integers | Whole number values. | `int age = 16;` | score |  |
 |  Double  | Number values with decimals. | `double age = 16.2;` | a link    |  |
 | Boolean  | A value that can be true or false. | `bool isLoggedIn = false;` | You can lose a streak if youre not on the app everyday  |  |
-|   List   | A collection of values in a specific order. | `List<String> names = [];` | to be oganized |  |
+|   List   | A collection of values in a specific order. | `List<String> names = [];` | to be organized |  |
 |   Null   | A special value that means “nothing.” | `String? name = null;` | unpredictable behavior  |  |
 | Function | A reusable block of code that performs an action. | `void sayHi() { print("Hi"); }` | saves time  |  |
 | Parameter| The information passed into a function to change how it works. | `greet(String name)` | sensor data  |  |
