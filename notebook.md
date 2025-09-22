@@ -75,29 +75,22 @@
 ## Flutter Definitions with structures
 
 | Term | Definition and Description | Base Structure | Real Life Example | App Example |
-
 |------|----------------------------|----------------|-------------------|-------------|
-
 |  Main  | A function that runs when your app starts. It tells Flutter what app to show. | `void main() => runApp(MyApp());` | power button | in main.dart, void main() => runApp(MyPortfolioApp()); |
-| MaterialApp | The widget that sets up your whole app’s look and navigation. | `MaterialApp(...)` | personal portfolio | return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'TSA Portfolio', |
-|  scaffold   | A widget that gives you the basic layout: background, navigation bar, floating button, etc. | `Scaffold(...)` | layout | in showcase.dart, return Scaffold(
-      body: Column(
- mainAxisAlignment: MainAxisAlignment.start,
-        children: [ |
-| Column | A widget that holds and displays your content in a straight line from top to bottom. | `Column(...)` | reposts|  |
-|   Row   | A widget that shows things side-by-side. | `Row(...)` | stories |  |
-|  Container  | A box that holds other widgets. You can add color, padding, borders, or size. | `Container(...)` | file |  |
-| text | A widget to display text on the screen. | `Text('Hello')` | message |  |
-|   Image.network   | A widget to show an image using a link from the internet. | `Image.network('https://...')` | google | 
-|  elevatedbutton  | A clickable button that floats above content. You choose what happens when it's clicked. | `ElevatedButton(onPressed: ..., child: ...)` | delete buttons |  |
-| onPressed | The code that gets run when a button is tapped or something happens. | `onPressed: () => doSomething()` | follow button |  |
-| Stateless Widget | A class that creates widgets that never change. Good for static screens. | `class HomeScreen extends StatelessWidget` | app |  |
+| MaterialApp | The widget that sets up your whole app’s look and navigation. | `MaterialApp(...)` | personal portfolio | return MaterialApp( debugShowCheckedModeBanner: false,  title: 'TSA Portfolio', |
+|  scaffold   | A widget that gives you the basic layout: background, navigation bar, floating button, etc. | `Scaffold(...)` | layout | in showcase.dart, return Scaffold(  body: Column( mainAxisAlignment: MainAxisAlignment.start, children: [ |
+| Column | A widget that holds and displays your content in a straight line from top to bottom. | `Column(...)` | reposts| body: Column( mainAxisAlignment: MainAxisAlignment.start,  children: [ |
+|   Row   | A widget that shows things side-by-side. | `Row(...)` | stories |  child: Row( children: [ |
+|  Container  | A box that holds other widgets. You can add color, padding, borders, or size. | `Container(...)` | file | return Container( margin: const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
+| text | A widget to display text on the screen. | `Text('Hello')` | message | const Text( 'A QUICK BACKGROUND', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold), ), Wrap( alignment:WrapAlignment.center, children: [
+|   Image.network   | A widget to show an image using a link from the internet. | `Image.network('https://...')` | google | Image.network(url, width: 100, height: 100, fit: BoxFit.cover), |
+|  elevatedbutton  | A clickable button that floats above content. You choose what happens when it's clicked. | `ElevatedButton(onPressed: ..., child: ...)` | delete buttons | ElevatedButton( onPressed: () => Navigator.pushNamed(context, '/background'), |
+| onPressed | The code that gets run when a button is tapped or something happens. | `onPressed: () => doSomething()` | follow button | onPressed: () => Navigator.pushNamed(context, '/background'), |
+| Stateless Widget | A class that creates widgets that never change. Good for static screens. | `class HomeScreen extends StatelessWidget` | app | class AltDesignScreen extends StatelessWidget { const AltDesignScreen({super.key}); |
 | Stateful Widget | A class for widgets that can change while the app is running. | `class MyWidget extends StatefulWidget` | changes |  |
-| Navigator | Lets you move from one screen to another using route names. | `Navigator.pushNamed(context, '/about')` |  |  |
-| Padding | Makes space around a widget inside its container. | `Padding(padding: EdgeInsets.all(8.0), child: ...)` | seating chart |  |
-| Center | Aligns content in the center of the screen or container. | `Center(child: ...)` | project |  |
+| Navigator | Lets you move from one screen to another using route names. | `Navigator.pushNamed(context, '/about')` | locate | Navigator.pushNamed(context, '/showcase'), |
+| Padding | Makes space around a widget inside its container. | `Padding(padding: EdgeInsets.all(8.0), child: ...)` | seating chart |  const Padding( padding: EdgeInsets.all(8.0), |
+| Center | Aligns content in the center of the screen or container. | body: Center( MainAxisAlignment.center, children: [ |
 | Wrap | Automatically puts widgets onto a new line when there's no space. | `Wrap(children: [...])` | sandwich |  |
 | override | This marks a method as one that’s replacing a method in a parent class. | `@override` | too much apps |  |
 | Widget build | The special function in every widget that describes what gets drawn on the screen. | `Widget build(BuildContext context) {...}` |  |  |
