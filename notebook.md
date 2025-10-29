@@ -98,6 +98,10 @@
 | BuildContext | A variable that helps the widget know where it is and lets it communicate with the app. | `BuildContext context` |  |  |
 | super.key | A keyword used to pass a value to the parent widget. | `super.key` | emailing your teacher |  |
 | const | A keyword that means the value won't change and is set once. | `const` | title |  |
+| Maximum Int | the max value an int can hold: -2147483647 | Integer _MAX_VALUE | | |
+| Minimum int | The mimimum value an int can hold: - 2147483648 | Integer _MIN_VALUE | | |
+| integer overflow | Integer.MAX_VALUE + 1 == MIN_VALUE, it wraps around | | |
+| |||||||||||||||||||||||||||||||||
 
 
 ## Markdown Style Guide for Coding Notebooks
