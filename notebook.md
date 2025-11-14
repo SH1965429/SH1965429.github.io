@@ -104,8 +104,19 @@
 | Minimum int | The mimimum value an int can hold: - 2147483648 | Integer _MIN_VALUE | | |
 | integer overflow | Integer.MAX_VALUE + 1 == MIN_VALUE, it wraps around | | |
 | integer underflow | Integer.MIN_VALUE-1 == MAX_VALUE, it wraps around| | | |
+
+| dot notation | Methods are called on objects using a dot after the object name | object.method(value);| | | 
+ Concatenate | To combine Strings with other Strings and/or variables | String greeting = "Hello" + " My name is " ||||||||||||||||||||||
 | round-off error | an approx, of the actual value, result is rounded to the nearest value that fits within the available bits | | | |
-| Overload ed method/function or constructor | Uses the same name, but has different parameters | Pizza(), Pizza(String toppings) 2 constrcutors, first is a default cheese pizza, LEFT OFF RIGHT HERE!!!|||||||||||||||||||
+| Overloaded method/function or constructor | Uses the same name, but has different parameters | Pizza(), Pizza(String toppings) 2 constrcutors, first is a default cheese pizza, LEFT OFF RIGHT HERE!!!
+| index | location value of each character in a String or list, starting at 0 | "Hello" index of "e" is 1 | | |
+| Substring |  Part of a larger String | "llo" is a subString of "Hello" | | |
+
+### String Methods Table
+
+<img width="1233" height="422" alt="image" src="https://github.com/user-attachments/assets/af2b0d18-0f40-4cc7-b82c-dde70d910f06" />
+
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 
 
 ## Markdown Style Guide for Coding Notebooks
